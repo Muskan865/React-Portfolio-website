@@ -2,7 +2,7 @@
 import { Wave } from "@/components/ui/wave";
 
 const SKILLS = [
-  { cat: "Languages", color: "#4a90d9", items: ["Python","JavaScript","TypeScript","Dart","C++","SQL"] },
+  { cat: "Languages", color: "#4a90d9", items: ["Python","JavaScript","Dart","C++","SQL", "C"] },
   { cat: "Web & Mobile", color: "#5bb4a0", items: ["React.js","Node.js","Express.js","Flutter","Next.js","REST APIs"] },
   { cat: "AI / ML", color: "#9b7de8", items: ["LLM Fine-Tuning","Hugging Face","OpenAI / Gemini","OpenCV","Whisper","mBERT / mBART"] },
   { cat: "Tools", color: "#e8874a", items: ["Git / GitHub","MongoDB","SQL Server","Docker","Agile","System Design"] },
