@@ -15,14 +15,10 @@ export function Hero() {
   useEffect(() => { setTimeout(() => setShow(true), 100); }, []);
 
   return (
-    <section style={{
-      minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-      background: "linear-gradient(180deg, #c8e8f8 0%, #daeefa 40%, #e8f4fd 100%)",
-      position: "relative", overflow: "hidden", paddingTop: 80,
-    }}>
+    <section className="hero-section">
       {/* Soft background circles */}
-      <div style={{ position: "absolute", top: "8%", left: "5%", width: 300, height: 300, borderRadius: "50%", background: "rgba(255,255,255,0.25)", filter: "blur(40px)" }} />
-      <div style={{ position: "absolute", bottom: "15%", right: "5%", width: 250, height: 250, borderRadius: "50%", background: "rgba(184,212,240,0.3)", filter: "blur(30px)" }} />
+      <div className="hero-circle hero-circle-left" />
+      <div className="hero-circle hero-circle-right" />
 
       {/* Annotations container */}
       <div style={{ position: "absolute", inset: 0 }}>
@@ -32,39 +28,19 @@ export function Hero() {
       </div>
 
       {/* Center content */}
-      <div style={{
-        display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem",
+      <div className="hero-content" style={{
         opacity: show ? 1 : 0, transform: show ? "none" : "translateY(20px)",
         transition: "all 0.8s ease",
       }}>
         {/* Profile circle */}
-        <div style={{
-          width: 180, height: 180, borderRadius: "50%",
-          border: "4px solid #4a90d9",
-          background: "linear-gradient(135deg, #b8d4f0, #daeefa)",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          fontSize: "5rem", boxShadow: "0 8px 32px rgba(74,144,217,0.25)",
-          position: "relative",
-        }}>
+        <div className="hero-profile">
           👩‍💻
           {/* Floating nav pills */}
-          <div style={{ position: "absolute", left: -160, top: "50%", transform: "translateY(-50%)" }}>
-            <a href="#skills" style={{
-              display: "inline-flex", alignItems: "center", gap: 6,
-              fontFamily: "'Nunito',sans-serif", fontWeight: 700, fontSize: "0.82rem",
-              background: "#4a90d9", color: "white",
-              borderRadius: 99, padding: "7px 16px", textDecoration: "none",
-              boxShadow: "0 4px 16px rgba(74,144,217,0.35)",
-            }}>{"</>"} My skills</a>
+          <div className="hero-pill hero-pill-left">
+            <a href="#skills" className="hero-pill-link">{"</>"} My skills</a>
           </div>
-          <div style={{ position: "absolute", right: -140, top: "50%", transform: "translateY(-50%)" }}>
-            <a href="#contact" style={{
-              display: "inline-flex", alignItems: "center", gap: 6,
-              fontFamily: "'Nunito',sans-serif", fontWeight: 700, fontSize: "0.82rem",
-              background: "#4a90d9", color: "white",
-              borderRadius: 99, padding: "7px 16px", textDecoration: "none",
-              boxShadow: "0 4px 16px rgba(74,144,217,0.35)",
-            }}>Say hi ✉</a>
+          <div className="hero-pill hero-pill-right">
+            <a href="#contact" className="hero-pill-link">Say hi ✉</a>
           </div>
         </div>
 
@@ -72,24 +48,13 @@ export function Hero() {
         <Cloud size={260}>Muskan Rehan</Cloud>
 
         {/* Tagline */}
-        <p style={{
-          fontFamily: "'Nunito',sans-serif", fontWeight: 600, fontSize: "1rem",
-          color: "#4a6a9a", textAlign: "center", maxWidth: 420,
-          background: "rgba(255,255,255,0.6)", borderRadius: 99,
-          padding: "8px 24px", backdropFilter: "blur(8px)",
-          border: "1px solid rgba(255,255,255,0.8)",
-        }}>
+        <p className="hero-tagline">
           Full-Stack · AI Automation · Research-Driven Solutions
         </p>
 
         {/* Status badge */}
-        <div style={{
-          display: "inline-flex", alignItems: "center", gap: 8,
-          fontFamily: "'Nunito',sans-serif", fontWeight: 700, fontSize: "0.8rem",
-          color: "#2c7a3a", background: "rgba(180,240,200,0.6)",
-          border: "1.5px solid #80d0a0", borderRadius: 99, padding: "5px 16px",
-        }}>
-          <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#40b060", animation: "pulse 2s infinite" }} />
+        <div className="hero-badge">
+          <span className="hero-badge-dot" />
           Open to internships & collaborations
         </div>
       </div>

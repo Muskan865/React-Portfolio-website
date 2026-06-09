@@ -72,48 +72,40 @@ type Project = {
 function ProjectCard({ proj }: { proj: Project }) {
   const [open, setOpen] = useState(false);
   return (
-    <div style={{
+    <div className="project-card" style={{
       background: "rgba(255,255,255,0.8)", borderRadius: 24,
       border: `2px solid ${proj.color}28`,
       boxShadow: `0 6px 32px ${proj.color}14`,
       overflow: "hidden",
     }}>
       {/* Header */}
-      <div style={{ padding: "2rem 2rem 1rem" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.75rem" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <span style={{ fontSize: "2rem" }}>{proj.emoji}</span>
+      <div className="project-card-header">
+        <div className="project-card-top">
+          <div className="project-card-title-block">
+            <span className="project-card-emoji" style={{ fontSize: "2rem" }}>{proj.emoji}</span>
             <div>
-              <div style={{ fontFamily: "'Caveat',cursive", fontSize: "0.85rem", color: proj.color }}>{proj.num} · {proj.period}</div>
-              <div style={{ fontFamily: "'Nunito',sans-serif", fontWeight: 800, fontSize: "1.2rem", color: "#2a2a4a" }}>{proj.title}</div>
-              <div style={{ fontFamily: "'Nunito',sans-serif", fontWeight: 600, fontSize: "0.85rem", color: "#7a7a9a" }}>{proj.subtitle}</div>
+              <div className="project-card-meta" style={{ color: proj.color }}>{proj.num} · {proj.period}</div>
+              <div className="project-card-title">{proj.title}</div>
+              <div className="project-card-subtitle">{proj.subtitle}</div>
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", marginBottom: "1rem" }}>
+        <div className="project-tags">
           {proj.tags.map(t => (
-            <span key={t} style={{
-              fontFamily: "'Nunito',sans-serif", fontWeight: 700, fontSize: "0.72rem",
-              background: `${proj.color}15`, color: proj.color,
-              border: `1.5px solid ${proj.color}30`, borderRadius: 99, padding: "3px 10px",
-            }}>{t}</span>
+            <span key={t} className="project-tag" style={{ background: `${proj.color}15`, color: proj.color, border: `1.5px solid ${proj.color}30` }}>{t}</span>
           ))}
         </div>
         {/* More info toggle */}
-        <button onClick={() => setOpen(!open)} style={{
-          display: "inline-flex", alignItems: "center", gap: 6,
-          fontFamily: "'Nunito',sans-serif", fontWeight: 700, fontSize: "0.82rem",
+        <button className="project-toggle" onClick={() => setOpen(!open)} style={{
           background: `${proj.color}18`, color: proj.color,
-          border: `1.5px solid ${proj.color}35`, borderRadius: 99,
-          padding: "6px 16px", cursor: "pointer",
-          transition: "all 0.2s",
+          border: `1.5px solid ${proj.color}35`,
         }}>
           More info {open ? "▲" : "▼"}
         </button>
       </div>
       {/* Expanded */}
       {open && (
-        <div style={{
+        <div className="project-expanded" style={{
           borderTop: `1.5px solid ${proj.color}20`, padding: "1.25rem 2rem 1.5rem",
           background: `${proj.color}06`,
           animation: "floatUp 0.3s ease",
@@ -142,12 +134,12 @@ export function Projects() {
   return (
     <>
       <Wave topColor="#e8e4f4" bottomColor="#e8f4fd" />
-      <section id="projects" style={{ background: "linear-gradient(180deg,#e8f4fd,#daeefa)", padding: "4rem 2rem 2rem" }}>
-        <div style={{ maxWidth: 860, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Nunito',sans-serif", fontWeight: 800, fontSize: "2.2rem", color: "#1a3a5a", marginBottom: "2.5rem", textAlign: "center" }}>
+      <section id="projects" className="projects-section">
+        <div className="section-container projects-container">
+          <h2 className="section-heading">
             Things I've built 🚀
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+          <div className="projects-list">
             {PROJECTS.map((proj, i) => <ProjectCard key={i} proj={proj} />)}
           </div>
         </div>
