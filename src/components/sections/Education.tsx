@@ -6,7 +6,7 @@ export default function Education() {
       <Wave topColor="#daeefa" bottomColor="#f4f0e8" />
       <section id="education" className="education-section">
         <div className="section-container education-container">
-          <h2 className="section-heading">
+          <h2 className="section-heading" style={{ color: "#dc903ef8" }}>
             Where I study 🎓
           </h2>
           <div className="education-grid">

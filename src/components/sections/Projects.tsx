@@ -136,7 +136,7 @@ export function Projects() {
       <Wave topColor="#e8e4f4" bottomColor="#e8f4fd" />
       <section id="projects" className="projects-section">
         <div className="section-container projects-container">
-          <h2 className="section-heading">
+          <h2 className="section-heading" style={{ color: "#2e3e7e" }}>
             Things I've built 🚀
           </h2>
           <div className="projects-list">

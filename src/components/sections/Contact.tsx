@@ -6,7 +6,7 @@ export function Contact() {
       <Wave topColor="#ede8e0" bottomColor="#e0f0e8" />
       <section id="contact" className="contact-section">
         <div className="section-container contact-container">
-          <h2 className="section-heading">
+          <h2 className="section-heading" style={{ color: "#2c7a3a" }}>
             Let's build something worth building 🌿
           </h2>
           <p className="contact-copy">
