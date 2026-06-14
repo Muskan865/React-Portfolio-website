@@ -20,7 +20,7 @@ export default function Home() {
     <Contact />
     <footer style={{ background: "#d4eee0", borderTop: "2px solid rgba(80,160,110,0.15)", padding: "1.5rem 2rem", textAlign: "center" }}>
         <span style={{ fontFamily: "'Nunito',sans-serif", fontWeight: 700, fontSize: "0.85rem", color: "#6a9a7a" }}>
-          © 2026 Muskan Rehan · Karachi, Pakistan 🌊
+          © 2026 Muskan Rehan 
         </span>
       </footer>
     </>
