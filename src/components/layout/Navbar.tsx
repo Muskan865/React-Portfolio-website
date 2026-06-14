@@ -15,7 +15,7 @@ export default function Nav() {
     setMenuOpen(false);
   };
 
-  const navLinks = [["#about","About"],["#skills","Skills"],["#experience","Experience"],["#projects","Projects"],["#contact","Say hi"]];
+  const navLinks = [["#about","About"],["#skills","Skills"],["#projects","Projects"],["#contact","Say hi"]];
 
   return (
     <>
