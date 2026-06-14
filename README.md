@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Muskan Rehan — Personal Portfolio
 
-## Getting Started
+Live at → **[react-portfolio-website-beta-peach.vercel.app](https://react-portfolio-website-beta-peach.vercel.app/)**
 
-First, run the development server:
+A personal portfolio website showcasing my work in full-stack development, AI/ML research, and client-facing software delivery. Built with Next.js and Tailwind CSS, deployed on Vercel.
+
+---
+
+## About
+
+I'm a Computer Science student at Habib University (graduating 2027) with hands-on experience building web apps, mobile apps, and AI pipelines. This site covers who I am, what I've built, and how to reach me.
+
+---
+
+## Tech Stack
+
+- **Framework** — [Next.js](https://nextjs.org) (App Router)
+- **Styling** — Tailwind CSS
+- **Deployment** — [Vercel](https://vercel.com)
+
+---
+
+## Running Locally
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+/app          → Pages and layouts (App Router)
+/components   → Reusable UI components
+/public       → Static assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Section | What's there |
+|---|---|
+| Hero | Intro + quick personality snapshot |
+| About | Background, CGPA, current status |
+| Skills | Languages, frameworks, AI/ML tools |
+| Projects | 5 projects with descriptions and tech |
+| Experience | Education and research roles |
+| Contact | Email, LinkedIn, phone |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Muskan Rehan**
+[muskanrehan865@gmail.com](mailto:muskanrehan865@gmail.com) · [LinkedIn](https://linkedin.com/in/muskan-rehan-159367261) · Karachi, Pakistan
